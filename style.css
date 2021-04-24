@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo {
+    width: 80px;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    position: relative;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: #333;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+}
+
+.textBox{
+    max-width: 600px;
+}
+
+.textBox h2{
+    color: #333;
+    font-size: 3.6em;
+    line-height: 1.4em;
+}
+
+.textBox h2 span{
+    font-size: 1.6em;
+    color: #017143;
+    font-weight: 900;
+}
+
+.textBox p{
+    color: #333;
+}
+
+.textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 40px;
+    padding: 8px 20px;
+    background: #017143;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.1px;
+}
+
+.imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 65px;
+    margin-top: -90px;
+}
+
+.imgBox img{
+    max-width: 340px;
+}
+
+.thumb{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    
+}
+
+.thumb li{
+    transition: 0.5s;
+    margin: 5px 10px;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px)
+}
+
+.thumb img{
+    max-width: 60px;
+    cursor: pointer;
+}
+
+.sci{
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.sci li{
+    list-style-type: none;
+    margin: 5px 15px;
+    transform: scale(0.6);
+    transition:  0.5s;
+    filter: invert(1);
+}
+
+.sci li:hover{
+    transform: scale(0.8)
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #017143;
+    clip-path: circle(560px at right 690px);
+    z-index: -1;
+}
+
+.rotateImg{
+    transform: rotate(-10deg);
+}
